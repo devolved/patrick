@@ -1,0 +1,400 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/patrick.scss */
+html, body, div, span, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../sass/patrick.scss */
+div, span {
+  display: block;
+  box-sizing: border-box;
+}
+
+/* line 24, ../sass/patrick.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #555;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  font-smooth: always;
+  font-family: "Arial", sans-serif;
+}
+
+/* line 36, ../sass/patrick.scss */
+a {
+  text-decoration: none;
+  color: #7acf18;
+}
+
+/* line 41, ../sass/patrick.scss */
+a:hover, a:active, a:focus {
+  color: #8b1923;
+}
+
+/* patrick */
+/* line 48, ../sass/patrick.scss */
+#patrick {
+  position: relative;
+  margin: 30px auto;
+  background-image: url("../patrick.pngdd");
+  background-size: auto 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 600px;
+  border: 1px solid purple;
+}
+
+/* line 63, ../sass/patrick.scss */
+#patrick div, #patrick span {
+  position: absolute;
+  background: #FE9788;
+  display: block;
+}
+
+/* line 70, ../sass/patrick.scss */
+.arm {
+  z-index: 30;
+  top: 273px;
+  left: -44px;
+  width: 300px;
+  height: 125px;
+  border: 8px solid #F23B1C;
+  border-radius: 14% 86% 0% 100%/27% 1% 99% 73%;
+  clip-path: polygon(0 0, 83% 0, 93% 100%, 0% 100%);
+  transform: rotate(39deg);
+}
+
+/* line 90, ../sass/patrick.scss */
+.arm.left {
+  z-index: 1;
+  left: auto;
+  top: 250px;
+  right: -44px;
+  width: 300px;
+  height: 125px;
+  transform: rotate(-39deg) scaleX(-1);
+}
+
+/* line 103, ../sass/patrick.scss */
+#tip {
+  z-index: 15;
+  top: 1px;
+  left: 200px;
+  width: 101px;
+  height: 86px;
+  border: 4px solid #F23B1C;
+  clip-path: polygon(0 0, 100% 0, 100% 63%, 0 71%);
+  border-radius: 19% 81% 27% 73%/49% 100% 0% 51%;
+}
+
+/* line 121, ../sass/patrick.scss */
+#body-upper {
+  z-index: 20;
+  top: 0;
+  left: 227px;
+  width: 143px;
+  height: 339px;
+  border-right: 6px solid #F23B1C;
+  border-radius: 19% 81% 100% 0%/49% 100% 0% 51%;
+  transform: rotate(-8deg);
+  clip-path: polygon(0 0, 100% 0%, 100% 66%, 0 86%);
+}
+
+/* line 136, ../sass/patrick.scss */
+#body-fill-stroke {
+  z-index: 12;
+  top: 51px;
+  left: 132px;
+  width: 377px;
+  height: 413px;
+  background: #F23B1C !important;
+  clip-path: polygon(94% 93%, 86% 83%, 81% 73%, 76% 66%, 74% 63%, 67% 49%, 58% 26%, 52% 15%, 50% 9%, 46% 3%, 44% 1%, 19% 0%, 20% 2%, 20% 7%, 21% 13%, 21% 22%, 21% 30%, 21% 37%, 21% 43%, 21% 46%, 20% 50%, 19% 55%, 18% 59%, 15% 65%, 14% 76%, 14% 93%);
+}
+
+/* line 148, ../sass/patrick.scss */
+#body-fill {
+  z-index: 13;
+  top: 51px;
+  left: 132px;
+  width: 392px;
+  height: 413px;
+  clip-path: polygon(94% 93%, 86% 83%, 81% 73%, 76% 66%, 74% 63%, 67% 49%, 58% 26%, 52% 15%, 50% 9%, 46% 3%, 44% 1%, 19% 0%, 20% 2%, 20% 7%, 21% 13%, 21% 22%, 21% 30%, 21% 37%, 21% 43%, 21% 46%, 20% 50%, 19% 55%, 18% 59%, 15% 65%, 14% 76%, 14% 93%);
+  transform: scaleX(0.9) translate(-11px, 0px);
+}
+
+/* line 162, ../sass/patrick.scss */
+#body-belly {
+  top: 361px;
+  left: 115px;
+  width: 406px;
+  height: 337px;
+  border: 10px solid #F23B1C;
+  border-radius: 59% 41% 68% 32%/47% 57% 43% 53%;
+}
+/* line 173, ../sass/patrick.scss */
+#body-belly span {
+  z-index: 66;
+  top: 45px;
+  left: 52px;
+  width: 20px;
+  height: 20px;
+}
+/* line 182, ../sass/patrick.scss */
+#body-belly span.fail1 {
+  top: 45px;
+  left: 52px;
+}
+/* line 183, ../sass/patrick.scss */
+#body-belly span.fail2 {
+  top: 54px;
+  left: 299px;
+}
+
+/* line 187, ../sass/patrick.scss */
+.eye {
+  z-index: 69;
+  top: 172px;
+  left: 319px;
+  height: 106px;
+  width: 77px;
+  background: #fff !important;
+  border: 3px solid #000;
+  border-radius: 50%;
+  transform: rotate(-8deg);
+}
+/* line 201, ../sass/patrick.scss */
+.eye span {
+  z-index: 70;
+  top: 34px;
+  left: 19px;
+  height: 28px;
+  width: 20px;
+  border-radius: 50%;
+  background: #000 !important;
+}
+
+/* line 212, ../sass/patrick.scss */
+.eye.left {
+  z-index: 79;
+  top: 176px;
+  left: 261px;
+  height: 106px;
+  width: 77px;
+}
+/* line 220, ../sass/patrick.scss */
+.eye.left span {
+  z-index: 80;
+  top: 36px;
+  left: 28px;
+}
+
+/* line 229, ../sass/patrick.scss */
+.eyebrow {
+  z-index: 69;
+  top: 140px;
+  left: 260px;
+  height: 15px;
+  width: 30px;
+  background: #000 !important;
+  clip-path: polygon(21% 2%, 10% 10%, 1% 24%, 1% 43%, 9% 49%, 19% 55%, 10% 66%, 2% 77%, 1% 86%, 5% 94%, 97% 96%, 81% 77%, 72% 62%, 86% 49%, 97% 30%, 100% 22%, 99% 12%, 92% 0%);
+  transform: rotate(-30deg);
+}
+
+/* line 244, ../sass/patrick.scss */
+.eyebrow.left {
+  top: 131px;
+  left: 321px;
+  transform: rotate(20deg);
+}
+
+/* line 252, ../sass/patrick.scss */
+#mouth {
+  z-index: 69;
+  top: 301px;
+  left: 242px;
+  height: 89px;
+  width: 147px;
+  overflow: hidden;
+  background: #7D0B01 !important;
+  border: 3px solid #000;
+  border-radius: 50%;
+  transform: rotate(10deg);
+}
+/* line 268, ../sass/patrick.scss */
+#mouth span {
+  top: 53px;
+  left: 57px;
+  height: 40px;
+  width: 100px;
+  background: #F88F96;
+  border: 2px solid #A91827;
+  border-radius: 50%;
+}
+/* line 281, ../sass/patrick.scss */
+#mouth span.m2 {
+  z-index: 2;
+  top: 60px;
+  left: 20px;
+  clip-path: polygon(0 1%, 100% 0, 64% 66%, 0 88%);
+}
+
+/* line 293, ../sass/patrick.scss */
+#shorts {
+  bottom: 0;
+  left: 0;
+  width: 406px;
+  height: 337px;
+  background: #B2DB1F !important;
+  border: 10px solid #000;
+  border-top: 0;
+  border-radius: 59% 41% 68% 32%/47% 57% 43% 53%;
+}
+
+/* line 312, ../sass/patrick.scss */
+#shorts-wrap {
+  overflow: hidden;
+  z-index: 25;
+  top: 500px;
+  left: 115px;
+  width: 406px;
+  height: 200px;
+  background: transparent !important;
+}
+
+/* line 325, ../sass/patrick.scss */
+#shorts-clip-wrap {
+  overflow: hidden;
+  z-index: 35;
+  top: 500px;
+  left: 117px;
+  width: 399px;
+  height: 100px;
+  background: transparent !important;
+}
+
+/* line 339, ../sass/patrick.scss */
+#shorts-clip {
+  z-index: 34;
+  bottom: 0;
+  left: -35px;
+  width: 436px;
+  height: 337px;
+  border: 10px solid #000;
+  border-radius: 53% 47% 42% 58%/42% 63% 37% 58%;
+}
+
+/* line 352, ../sass/patrick.scss */
+.shorts-leg-wrap {
+  overflow: hidden;
+  z-index: 35;
+  top: 676px;
+  left: 67px;
+  width: 399px;
+  height: 67px;
+  background: transparent !important;
+}
+
+/* line 366, ../sass/patrick.scss */
+.shorts-leg-one {
+  z-index: 9;
+  bottom: 0;
+  left: 117px;
+  width: 130px;
+  height: 120px;
+  background: #B2DB1F !important;
+  border: 10px solid #000;
+  border-radius: 18% 82% 25% 75%/99% 0% 100% 1%;
+}
+
+/* line 378, ../sass/patrick.scss */
+.shorts-leg-one.flip {
+  z-index: 10;
+  left: 125px;
+  transform: scaleX(-1);
+  clip-path: polygon(0 0, 76% 0, 74% 100%, 0 100%);
+}
+
+/* line 391, ../sass/patrick.scss */
+.slw-two {
+  z-index: 20;
+  top: 638px;
+  left: 220px;
+  height: 106px;
+}
